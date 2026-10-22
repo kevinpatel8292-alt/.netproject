@@ -1,0 +1,7 @@
+@model IEnumerable<Appointment>
+@{ ViewData["Title"] = "Appointments"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h2>Appointments</h2><a class="btn btn-primary" asp-action="Create">+ New Appointment</a></div>
+<div class="table-responsive bg-white rounded-3 shadow-sm"><table class="table table-hover mb-0">
+<thead><tr><th>Patient</th><th>Doctor</th><th>Date</th><th>Status</th><th>Notes</th><th>Action</th></tr></thead><tbody>
+@foreach (var a in Model) { <tr><td>@a.Patient?.Name</td><td>@a.Doctor?.Name</td><td>@a.AppointmentDate.ToString("dd-MM-yyyy")</td><td><span class="badge bg-success">@a.Status</span></td><td>@a.Notes</td><td><a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@a.AppointmentId">Delete</a></td></tr> }
+</tbody></table></div>

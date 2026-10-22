@@ -1,0 +1,117 @@
+{
+  "Patients": [
+    {
+      "PatientId": 1,
+      "Name": "max patel",
+      "Phone": "8974568879",
+      "Gender": "Male",
+      "Age": 17,
+      "Address": "uk",
+      "CreatedAt": "2026-09-11T14:48:23.3796329+05:30"
+    },
+    {
+      "PatientId": 2,
+      "Name": "amit patel",
+      "Phone": "7878789654",
+      "Gender": "Male",
+      "Age": 20,
+      "Address": "surat,udhna",
+      "CreatedAt": "2026-09-11T14:48:41.201381+05:30"
+    },
+    {
+      "PatientId": 3,
+      "Name": "priya sharma",
+      "Phone": "8989895466",
+      "Gender": "Female",
+      "Age": 25,
+      "Address": "bharuch",
+      "CreatedAt": "2026-09-11T15:17:43.2957019+05:30"
+    },
+    {
+      "PatientId": 4,
+      "Name": "johny sins \u0026 ",
+      "Phone": "7412589630",
+      "Gender": "Male",
+      "Age": 50,
+      "Address": "New York ",
+      "CreatedAt": "2026-10-15T09:02:52.9504131+05:30"
+    },
+    {
+      "PatientId": 5,
+      "Name": "abcd",
+      "Phone": "856745239",
+      "Gender": "Female",
+      "Age": 77,
+      "Address": "as",
+      "CreatedAt": "2026-10-20T22:07:09.4515884+05:30"
+    }
+  ],
+  "Doctors": [
+    {
+      "DoctorId": 1,
+      "Name": "Dr. Mehta",
+      "Specialization": "General Physician",
+      "Phone": "9877001122"
+    },
+    {
+      "DoctorId": 2,
+      "Name": "Dr. Shah",
+      "Specialization": "Cardiologist",
+      "Phone": "9877002233"
+    },
+    {
+      "DoctorId": 3,
+      "Name": "Dr. Alpesh Patel",
+      "Specialization": "Dentist",
+      "Phone": "9877003344"
+    }
+  ],
+  "Appointments": [
+    {
+      "AppointmentId": 1,
+      "PatientId": 1,
+      "Patient": {
+        "PatientId": 1,
+        "Name": "max patel",
+        "Phone": "8974568879",
+        "Gender": "Male",
+        "Age": 17,
+        "Address": "uk",
+        "CreatedAt": "2026-09-11T14:48:23.3796329+05:30"
+      },
+      "DoctorId": 1,
+      "Doctor": {
+        "DoctorId": 1,
+        "Name": "Dr. Mehta",
+        "Specialization": "General Physician",
+        "Phone": "9877001122"
+      },
+      "AppointmentDate": "2026-11-20T00:00:00",
+      "Status": "Scheduled",
+      "Notes": "xyz"
+    },
+    {
+      "AppointmentId": 2,
+      "PatientId": 2,
+      "Patient": {
+        "PatientId": 2,
+        "Name": "amit patel",
+        "Phone": "7878789654",
+        "Gender": "Male",
+        "Age": 20,
+        "Address": "surat,udhna",
+        "CreatedAt": "2026-09-11T14:48:41.201381+05:30"
+      },
+      "DoctorId": 2,
+      "Doctor": {
+        "DoctorId": 2,
+        "Name": "Dr. Shah",
+        "Specialization": "Cardiologist",
+        "Phone": "9877002233"
+      },
+      "AppointmentDate": "2026-09-23T00:00:00",
+      "Status": "Scheduled",
+      "Notes": "xyz"
+    }
+  ]
+}

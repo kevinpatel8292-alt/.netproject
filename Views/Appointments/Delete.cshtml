@@ -1,0 +1,5 @@
+@model Appointment
+@{ ViewData["Title"] = "Delete Appointment"; }
+<div class="card shadow-sm border-0 p-4"><h2>Delete Appointment</h2>
+<p>Delete appointment for <strong>@Model.Patient?.Name</strong> with <strong>@Model.Doctor?.Name</strong> on <strong>@Model.AppointmentDate.ToString("dd-MM-yyyy")</strong>?</p>
+<form asp-action="Delete" method="post"><input type="hidden" asp-for="AppointmentId"/><button class="btn btn-danger">Yes, Delete</button> <a asp-action="Index" class="btn btn-secondary">Cancel</a></form></div>

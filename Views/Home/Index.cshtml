@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="hero p-4 p-md-5 mb-4 rounded-4">
+    <h1 class="display-6 fw-bold">Hospital Management System</h1>
+    <p class="lead mb-0">Simple mini project for managing patients, doctors and appointments.</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4"><div class="stat-card"><div class="icon">👤</div><h6>Patients</h6><h2>@ViewBag.Patients</h2><a asp-controller="Patients" asp-action="Index">Manage Patients →</a></div></div>
+    <div class="col-md-4"><div class="stat-card"><div class="icon">👨‍⚕️</div><h6>Doctors</h6><h2>@ViewBag.Doctors</h2><a asp-controller="Doctors" asp-action="Index">Manage Doctors →</a></div></div>
+    <div class="col-md-4"><div class="stat-card"><div class="icon">📅</div><h6>Appointments</h6><h2>@ViewBag.Appointments</h2><a asp-controller="Appointments" asp-action="Index">Manage Appointments →</a></div></div>
+</div>

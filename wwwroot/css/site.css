@@ -1,0 +1,8 @@
+body { background:#f5f7fb; }
+.hero { background:linear-gradient(135deg,#0d6efd,#4f8dfd); color:white; }
+.stat-card { background:white; border-radius:16px; padding:25px; box-shadow:0 4px 18px rgba(0,0,0,.06); height:100%; }
+.stat-card .icon { font-size:2.4rem; }
+.stat-card h2 { font-weight:700; margin:8px 0; }
+.stat-card a { text-decoration:none; }
+.table { vertical-align:middle; }
+footer { background:white; }
